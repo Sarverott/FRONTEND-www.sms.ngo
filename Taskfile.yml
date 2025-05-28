@@ -16,7 +16,7 @@ vars:
 
 includes:
   craftfile:
-    taskfile: ./Craft.yaml
+    taskfile: '../Craft.yml'
     flatten: true
     internal: true
 
