@@ -1,6 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <iframe
+      width="425"
+      height="350"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=19.006626605987552%2C50.24783609436576%2C19.034950733184818%2C50.26202200877068&amp;layer=transportmap"
+      style="border: 1px solid black"
+    ></iframe
+    ><br /><small
+      ><a href="https://www.openstreetmap.org/?#map=16/50.25493/19.02079&amp;layers=TN"
+        >View Larger Map</a
+      ></small
+    >
   </div>
 </template>
 

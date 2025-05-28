@@ -1,6 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+import { totp, hotp } from 'jsOTP'
+
+console.log('jsOTP loaded:', totp, hotp)
 </script>
 
 <template>

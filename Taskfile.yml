@@ -2,10 +2,26 @@
 
 version: '3'
 
+env:
+  BOS_WORKDIRS_ROOT: '~/__WORKSHOP'
+  BOS_WORKSPACE_PROJECT: './forge/SIL_makerspace'
+  BOS_SYNCPROXY: './archive/SIL_makerspace'
+  BOS_GITURL: 'ssh://git@bitbucket.org:apokryf/craftsetups-www.sms.ngo.git'
+  BOS_LOCALTHIS: 'craftsetups'
+  BOS_REPOWIKI: 'ssh://git@bitbucket.org:apokryf/craftsetups-www.sns.ngo.git/wiki'
+  BOS_SSHKEY: './.SETUP/.identity/SIL_makerspace---rsa-ssh'
+
 vars:
   GREETING: Hello, World!
 
 tasks:
+  devrun:
+    dir:
+      - ../website-frontend-www.sms.ngo
+    cmds:
+      - npm install
+      - npm run dev
+    silent: true
   default:
     cmds:
       - echo "{{.GREETING}}"
