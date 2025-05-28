@@ -14,10 +14,17 @@ env:
 vars:
   GREETING: Hello, World!
 
+includes:
+  craftfile:
+    taskfile: ./Craft.yaml
+    flatten: true
+    internal: true
+
 tasks:
+  autogit:
+    cmds:
+      - task: skip_repo_stuff
   devrun:
-    dir:
-      - ../website-frontend-www.sms.ngo
     cmds:
       - npm install
       - npm run dev
