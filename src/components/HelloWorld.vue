@@ -5,17 +5,21 @@ defineProps({
     required: true,
   },
 })
+
+import { onMounted, ref } from 'vue'
+
+const calendarUrls = {
+  //google: {
+  //  weekly: `https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FWarsaw&title=%C5%9Al%C4%85ski%20MakerSpace%20-%20KATO&mode=WEEK&src=YjQ3OWI5YjBkY2MwYTE5NzE0MGMxOTAxOTAzOTc4ZTE0YWFiZTA5YjVlNmM5MGY0Nzc3OTNlNmFjMjU0ZTY3MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y3RmdGltZUBnbWFpbC5jb20&src=cGwucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548&color=%230b8043&color=%237cb342&color=%230b8043`,
+  //  monthly: `https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FWarsaw&title=%C5%9Al%C4%85ski%20MakerSpace%20-%20KATO&mode=MONTH&src=YjQ3OWI5YjBkY2MwYTE5NzE0MGMxOTAxOTAzOTc4ZTE0YWFiZTA5YjVlNmM5MGY0Nzc3OTNlNmFjMjU0ZTY3MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y3RmdGltZUBnbWFpbC5jb20&src=cGwucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548&color=%230b8043&color=%237cb342&color=%230b8043`,
+  //  harmonogram: `https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FWarsaw&title=%C5%9Al%C4%85ski%20MakerSpace%20-%20KATO&mode=AGENDA&src=YjQ3OWI5YjBkY2MwYTE5NzE0MGMxOTAxOTAzOTc4ZTE0YWFiZTA5YjVlNmM5MGY0Nzc3OTNlNmFjMjU0ZTY3MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y3RmdGltZUBnbWFpbC5jb20&src=cGwucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548&color=%230b8043&color=%237cb342&color=%230b8043`,
+  //},
+}
 </script>
 
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
-  </div>
+  <iframe :src="calendarUrls.google.weekly" style="border: solid 1px #777" width="800" height="600" frameborder="0"
+    scrolling="no"></iframe>
 </template>
 
 <style scoped>
@@ -36,6 +40,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+
   .greetings h1,
   .greetings h3 {
     text-align: left;
