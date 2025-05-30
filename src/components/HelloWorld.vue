@@ -18,8 +18,8 @@ const calendarUrls = {
 </script>
 
 <template>
-  <iframe :src="calendarUrls.google.weekly" style="border: solid 1px #777" width="800" height="600" frameborder="0"
-    scrolling="no"></iframe>
+  <!--<iframe :src="calendarUrls.google.weekly" style="border: solid 1px #777" width="800" height="600" frameborder="0"
+    scrolling="no"></iframe>-->
 </template>
 
 <style scoped>
