@@ -31,5 +31,5 @@ tasks:
     silent: true
   default:
     cmds:
-      - echo "{{.GREETING}}"
+      - code .
     silent: true

@@ -1,14 +1,13 @@
 {
-  "name": "sms.ngo-website-frontend",
+  "name": "MakerSpaceSilesia",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
     "test:unit": "vitest",
-    "format": "prettier --write src/"
+    "dev": "vite",
+    "format": "prettier --write src/",
+    "preview": "vite preview"
   },
   "dependencies": {
     "browserfs": "^1.4.3",
@@ -18,9 +17,11 @@
     "jsOTP": "github:Sarverott/JS-OTP",
     "opentimestamps": "^0.0.0",
     "qr": "^0.4.2",
+    "register-service-worker": "^1.7.2",
     "socket.io-client": "^4.8.1",
     "three": "^0.176.0",
     "vue": "^3.5.13",
+    "vue-meta": "^2.4.0",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
@@ -35,7 +36,10 @@
     "prettier": "3.5.3",
     "snyk": "^1.1297.1",
     "vite": "^6.2.4",
+    "vite-plugin-pwa": "^1.0.0",
+    "vite-plugin-sitemap": "^0.8.2",
     "vite-plugin-vue-devtools": "^7.7.2",
     "vitest": "^3.1.1"
-  }
+  },
+  "type": "module"
 }
