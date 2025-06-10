@@ -2,10 +2,10 @@
 import { RouterLink, RouterView } from 'vue-router'
 //import HelloWorld from './components/HelloWorld.vue'
 
-import SilesiaFooter from "@views/Footer_BottomLinks"
-import SilesiaMainCenter from "@views/Main_Centerior"
-import SilesiaAside from "@views/Aside_LeftPanel"
-import SilesiaHeader from "@views/Header_TopHat"
+import SilesiaFooter from "./Footer_BottomLinks.vue"
+import SilesiaMainCenter from "./Main_Centerior.vue"
+import SilesiaAside from "./Aside_LeftPanel.vue"
+import SilesiaHeader from "./Header_TopHat.vue"
 
 //import { totp, hotp } from 'jsOTP'
 
@@ -24,10 +24,22 @@ import SilesiaHeader from "@views/Header_TopHat"
     > well, actually it is best explanation
     > you can except I think.
     -->
-    <SilesiaHeader sitename="Silesia Maker Space">
-        <RouterLink to="/">"Hello World!""</RouterLink>
-        <RouterLink to="/about_this_place">About</RouterLink>
-        <RouterLink to="/translated_languages">Translate</RouterLink>
+    <SilesiaHeader sitename="Silesia Maker Space" currentcontext="Hello World! To my tukej som">
+        <RouterLink to="/">
+            <button class=" is-large button is-warning">
+                Hello World!
+            </button>
+        </RouterLink>
+        <RouterLink to="/about_this_place">
+            <button class="  is-large button is-warning is-dark">
+                About
+            </button>
+        </RouterLink>
+        <RouterLink to="/kalendarz">
+            <button class=" is-large button is-warning is-dark">
+                terminariumm
+            </button>
+        </RouterLink>
     </SilesiaHeader>
     <!-- 
     # lister panel on left with grafit
