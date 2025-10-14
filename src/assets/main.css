@@ -2,9 +2,5 @@
 
 
 :root {
-  --bulma-skeleton-background: var(--bulma-border);
-  --bulma-skeleton-radius: var(--bulma-radius-small);
-  --bulma-skeleton-block-min-height: 4.5em;
-  --bulma-skeleton-lines-gap: 0.75em;
-  --bulma-skeleton-line-height: 0.75em;
+  padding-top: 30px !important;
 }

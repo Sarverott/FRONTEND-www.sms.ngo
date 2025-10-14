@@ -10,7 +10,7 @@ import Sitemap from 'vite-plugin-sitemap'
 export default defineConfig({
   plugins: [
     vue(),
-    Sitemap({ hostname: 'https://example.com' }),
+    Sitemap({ hostname: 'https://www.sms.ngo' }),
     VitePWA(
       { 
         registerType: 'autoUpdate',

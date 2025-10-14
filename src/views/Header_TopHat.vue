@@ -13,7 +13,7 @@ import SocMedIcon from '@/components/soc-med/SocMedIcon.vue';
 </script>
 
 <template>
-    <header class="hero is-link ">
+    <header class="hero is-link is-large">
         <nav class="navbar">
             <div class="container">
                 <div id="navMenu" class="navbar-menu">

@@ -5,11 +5,15 @@
 </script>
 
 <template>
-    <main>
+    <div>
 
-        <slot></slot>
+        <main>
 
-    </main>
+            <slot></slot>
+
+        </main>
+    </div>
+
 </template>
 
 <style></style>

@@ -6,7 +6,7 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+                <strong>website</strong> by <a href="https://sarverott.com">Sett Sarverott A.A.B.</a>.
                 The source code is licensed
                 <a href="https://opensource.org/license/mit">MIT</a>. The
                 website content is licensed

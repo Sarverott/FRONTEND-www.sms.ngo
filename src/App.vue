@@ -4,11 +4,16 @@
 
 
 import VIEW from "./views/_Combainer.vue"
+import LoadingScreen from "./components/LoadingScreen.vue";
+
+
 
 
 </script>
 
 <template>
+
+  <LoadingScreen />
 
   <VIEW />
 

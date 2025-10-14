@@ -1,9 +1,10 @@
 <script setup>
     import { ref, reactive } from 'vue'
 
+    import Cookie from 'js-cookie'
+
     import Moon from "./icons/moon.vue"
     import Sun from "./icons/sun.vue"
-
 
     var docHook = document.querySelector("html");
 
@@ -11,8 +12,12 @@
 
     function checkTheme(){
         if (!docHook.getAttribute('data-theme')) {
-            docHook.setAttribute('data-theme', 'dark');
-            switchTheme()
+            if(typeof(Cookie.get("theme-mode"))=="undefined"){
+                docHook.setAttribute('data-theme', 'dark');
+            }else{
+                docHook.setAttribute('data-theme', Cookie.get("theme-mode"));
+            }
+            switchTheme();
         }
         return docHook.getAttribute('data-theme') === 'dark'
     }
@@ -20,8 +25,10 @@
     function switchTheme(){
         if(checkTheme()) {
             docHook.setAttribute("data-theme", "light")
+            if(typeof(Cookie.get("theme-mode"))) Cookie.set("theme-mode", "light")
         } else {
             docHook.setAttribute("data-theme", "dark")
+            if(typeof(Cookie.get("theme-mode"))) Cookie.set("theme-mode", "dark")
         }
     }
 

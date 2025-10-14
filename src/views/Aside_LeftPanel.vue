@@ -3,37 +3,47 @@
 </script>
 
 <template>
-    <aside>
-        <table>
-            <thead>
-                <tr>
-                    <th>One</th>
-                    <th>Two</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Three</td>
-                    <td>Four</td>
-                </tr>
-                <tr>
-                    <td>Five</td>
-                    <td>Six</td>
-                </tr>
-                <tr>
-                    <td>Seven</td>
-                    <td>Eight</td>
-                </tr>
-                <tr>
-                    <td>Nine</td>
-                    <td>Ten</td>
-                </tr>
-                <tr>
-                    <td>Eleven</td>
-                    <td>Twelve</td>
-                </tr>
-            </tbody>
-        </table>
+    <aside class="panel is-warning">
+        <p class="panel-heading">Warning</p>
+        <p class="panel-tabs">
+            <a class="is-active">All</a>
+            <a>Public</a>
+            <a>Private</a>
+            <a>Sources</a>
+            <a>Forks</a>
+        </p>
+        <div class="panel-block">
+            <p class="control has-icons-left">
+                <input class="input is-warning" type="text" placeholder="Search" />
+                <span class="icon is-left">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </span>
+            </p>
+        </div>
+        <a class="panel-block is-active">
+            <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            bulma
+        </a>
+        <a class="panel-block">
+            <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            marksheet
+        </a>
+        <a class="panel-block">
+            <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            minireset.css
+        </a>
+        <a class="panel-block">
+            <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            jgthms.github.io
+        </a>
     </aside>
 </template>
 
