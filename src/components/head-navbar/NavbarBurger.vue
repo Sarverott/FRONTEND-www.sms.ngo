@@ -1,12 +1,12 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-import NavbarBurgerModal from './NavbarBurgerModal.vue'
+import NavbarBurgerModal from "./NavbarBurgerModal.vue";
 
-const burgerActiveState = ref(false)
+const burgerActiveState = ref(false);
 
 function burgerClicker() {
-  burgerActiveState.value = !burgerActiveState.value
+	burgerActiveState.value = !burgerActiveState.value;
 }
 </script>
 <template>

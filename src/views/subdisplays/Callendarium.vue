@@ -1,15 +1,15 @@
 <script setup>
-import gcalendar from '@/components/widgets/GoogleCalendarDisplay.vue'
+import gcalendar from "@/components/widgets/GoogleCalendarDisplay.vue";
 
 const subcalendars = [
-  [
-    'YjQ3OWI5YjBkY2MwYTE5NzE0MGMxOTAxOTAzOTc4ZTE0YWFiZTA5YjVlNmM5MGY0Nzc3OTNlNmFjMjU0ZTY3MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t',
-    '#795548',
-  ],
-  ['ZW4ucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t', '#0b8043'],
-  ['Y3RmdGltZUBnbWFpbC5jb20', '#7cb342'],
-  ['cGwucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t', '#0b8043'],
-]
+	[
+		"YjQ3OWI5YjBkY2MwYTE5NzE0MGMxOTAxOTAzOTc4ZTE0YWFiZTA5YjVlNmM5MGY0Nzc3OTNlNmFjMjU0ZTY3MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t",
+		"#795548",
+	],
+	["ZW4ucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t", "#0b8043"],
+	["Y3RmdGltZUBnbWFpbC5jb20", "#7cb342"],
+	["cGwucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t", "#0b8043"],
+];
 </script>
 <template>
   <div class="box">

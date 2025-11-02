@@ -1,35 +1,35 @@
 <script setup>
-import { ref, reactive } from 'vue'
+import { reactive, ref } from "vue";
 
-import Cookie from 'js-cookie'
+import Cookie from "js-cookie";
 
-import Moon from './icons/moon.vue'
-import Sun from './icons/sun.vue'
+import Moon from "./icons/moon.vue";
+import Sun from "./icons/sun.vue";
 
-var docHook = document.querySelector('html')
+var docHook = document.querySelector("html");
 
-const isDark = ref(checkTheme())
+const isDark = ref(checkTheme());
 
 function checkTheme() {
-  if (!docHook.getAttribute('data-theme')) {
-    if (typeof Cookie.get('theme-mode') == 'undefined') {
-      docHook.setAttribute('data-theme', 'dark')
-    } else {
-      docHook.setAttribute('data-theme', Cookie.get('theme-mode'))
-    }
-    switchTheme()
-  }
-  return docHook.getAttribute('data-theme') === 'dark'
+	if (!docHook.getAttribute("data-theme")) {
+		if (typeof Cookie.get("theme-mode") == "undefined") {
+			docHook.setAttribute("data-theme", "dark");
+		} else {
+			docHook.setAttribute("data-theme", Cookie.get("theme-mode"));
+		}
+		switchTheme();
+	}
+	return docHook.getAttribute("data-theme") === "dark";
 }
 
 function switchTheme() {
-  if (checkTheme()) {
-    docHook.setAttribute('data-theme', 'light')
-    if (typeof Cookie.get('theme-mode')) Cookie.set('theme-mode', 'light')
-  } else {
-    docHook.setAttribute('data-theme', 'dark')
-    if (typeof Cookie.get('theme-mode')) Cookie.set('theme-mode', 'dark')
-  }
+	if (checkTheme()) {
+		docHook.setAttribute("data-theme", "light");
+		if (typeof Cookie.get("theme-mode")) Cookie.set("theme-mode", "light");
+	} else {
+		docHook.setAttribute("data-theme", "dark");
+		if (typeof Cookie.get("theme-mode")) Cookie.set("theme-mode", "dark");
+	}
 }
 </script>
 <template>

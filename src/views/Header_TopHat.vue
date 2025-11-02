@@ -1,13 +1,13 @@
 <script setup>
 //import { props } from "vue"
 const props = defineProps({
-  sitename: String,
-  currentcontext: String,
-})
+	sitename: String,
+	currentcontext: String,
+});
 
-import ThemeButton from '@/components/ThemeButton.vue'
-import SocMedIcon from '@/components/soc-med/SocMedIcon.vue'
-import NavbarHead from '@/components/head-navbar/NavbarHead.vue'
+import ThemeButton from "@/components/ThemeButton.vue";
+import NavbarHead from "@/components/head-navbar/NavbarHead.vue";
+import SocMedIcon from "@/components/soc-med/SocMedIcon.vue";
 </script>
 
 <template>

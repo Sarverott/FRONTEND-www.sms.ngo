@@ -1,12 +1,12 @@
 <script setup>
 //import {defineEmit} from 'vue';
 
-const props = defineProps(['notice'])
+const props = defineProps(["notice"]);
 
-const emit = defineEmits(['approval'])
+const emit = defineEmits(["approval"]);
 
 function acknowledgeButtonPush() {
-  emit('approval')
+	emit("approval");
 }
 </script>
 <template>

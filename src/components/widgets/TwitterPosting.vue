@@ -1,8 +1,8 @@
 <script setup>
-import 'https://platform.twitter.com/widgets.js'
+import "https://platform.twitter.com/widgets.js";
 
 function getThemeMode() {
-  return document.querySelector('html').getAttribute('data-theme')
+	return document.querySelector("html").getAttribute("data-theme");
 }
 </script>
 <template>

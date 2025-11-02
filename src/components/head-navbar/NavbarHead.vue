@@ -1,7 +1,7 @@
 <script setup>
-import ThemeButton from '../ThemeButton.vue'
-import Minilogo from '../icons/minilogo.vue'
-import NavbarBurger from './NavbarBurger.vue'
+import ThemeButton from "../ThemeButton.vue";
+import Minilogo from "../icons/minilogo.vue";
+import NavbarBurger from "./NavbarBurger.vue";
 </script>
 <template>
   <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">

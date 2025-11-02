@@ -1,11 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
 //import HelloWorld from './components/HelloWorld.vue'
 
-import SilesiaFooter from './Footer_BottomLinks.vue'
-import SilesiaMainCenter from './Main_Centerior.vue'
-import SilesiaAside from './Aside_LeftPanel.vue'
-import SilesiaHeader from './Header_TopHat.vue'
+import SilesiaAside from "./Aside_LeftPanel.vue";
+import SilesiaFooter from "./Footer_BottomLinks.vue";
+import SilesiaHeader from "./Header_TopHat.vue";
+import SilesiaMainCenter from "./Main_Centerior.vue";
 
 //import { totp, hotp } from 'jsOTP'
 

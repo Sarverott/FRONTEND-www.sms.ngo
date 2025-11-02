@@ -1,23 +1,23 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted } from "vue";
 
-import { animate, svg } from 'animejs'
+import { animate, svg } from "animejs";
 
 // const secondLogoClasses = reactive({
 //     classes: "hidden"
 // })
 
 onMounted(() => {
-  animate(svg.createDrawable('#logo-ver1'), {
-    draw: ['0 0', '0 1'],
-    ease: 'inQuad',
-    duration: 20000,
-    loop: false,
-    onComplete: (self) => {
-      // secondLogoClasses.classes = ""
-    },
-  })
-})
+	animate(svg.createDrawable("#logo-ver1"), {
+		draw: ["0 0", "0 1"],
+		ease: "inQuad",
+		duration: 20000,
+		loop: false,
+		onComplete: (self) => {
+			// secondLogoClasses.classes = ""
+		},
+	});
+});
 </script>
 
 <template>
