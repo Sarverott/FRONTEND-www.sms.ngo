@@ -6,7 +6,6 @@ import Callendarium from '@/views/subdisplays/Callendarium.vue'
 import SocmedTest from '@/views/subdisplays/SocmedTest.vue'
 // import LogoTest from '@/views/subdisplays/LogoTest.vue'
 
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [

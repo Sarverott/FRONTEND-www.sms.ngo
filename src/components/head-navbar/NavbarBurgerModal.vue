@@ -1,7 +1,6 @@
 <script setup></script>
-
 <template>
-  <aside class="menu">
+  <div class="menu">
     <p class="menu-label">General</p>
     <ul class="menu-list">
       <li><a>Dashboard</a></li>
@@ -28,7 +27,6 @@
       <li><a>Transfers</a></li>
       <li><a>Balance</a></li>
     </ul>
-  </aside>
+  </div>
 </template>
-
-<style></style>
+<style lang="css" module></style>

@@ -1,50 +1,48 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-    <aside class="panel is-warning">
-        <p class="panel-heading">Warning</p>
-        <p class="panel-tabs">
-            <a class="is-active">All</a>
-            <a>Public</a>
-            <a>Private</a>
-            <a>Sources</a>
-            <a>Forks</a>
-        </p>
-        <div class="panel-block">
-            <p class="control has-icons-left">
-                <input class="input is-warning" type="text" placeholder="Search" />
-                <span class="icon is-left">
-                    <i class="fas fa-search" aria-hidden="true"></i>
-                </span>
-            </p>
-        </div>
-        <a class="panel-block is-active">
-            <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            bulma
-        </a>
-        <a class="panel-block">
-            <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            marksheet
-        </a>
-        <a class="panel-block">
-            <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            minireset.css
-        </a>
-        <a class="panel-block">
-            <span class="panel-icon">
-                <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            jgthms.github.io
-        </a>
-    </aside>
+  <aside class="panel is-warning">
+    <p class="panel-heading">Warning</p>
+    <p class="panel-tabs">
+      <a class="is-active">All</a>
+      <a>Public</a>
+      <a>Private</a>
+      <a>Sources</a>
+      <a>Forks</a>
+    </p>
+    <div class="panel-block">
+      <p class="control has-icons-left">
+        <input class="input is-warning" type="text" placeholder="Search" />
+        <span class="icon is-left">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </span>
+      </p>
+    </div>
+    <a class="panel-block is-active">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      bulma
+    </a>
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      marksheet
+    </a>
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      minireset.css
+    </a>
+    <a class="panel-block">
+      <span class="panel-icon">
+        <i class="fas fa-book" aria-hidden="true"></i>
+      </span>
+      jgthms.github.io
+    </a>
+  </aside>
 </template>
 
 <style></style>

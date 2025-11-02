@@ -1,3 +1,1 @@
-<template>
-    &#x263E;
-</template>
+<template>&#x263E;</template>
