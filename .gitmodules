@@ -1,0 +1,4 @@
+[submodule "wiki of website developement"]
+	path = docs/gitwiki
+	url = https://github.com/SilesiaMakerSpace/FRONTEND-www.sms.ngo.wiki.git
+	branch = master

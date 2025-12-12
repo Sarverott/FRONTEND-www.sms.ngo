@@ -78,7 +78,7 @@ onMounted(() => {
 // getData("https://raw.githubusercontent.com/muan/unicode-emoji-json/refs/heads/main/data-by-emoji.json", (x)=>console.log(JSON.stringify(Object.keys(x))))
 
 function checkTermsAndPolicyAgreed(...cookieNames) {
-	cookieNames.unshift(cacheDescriptor["acceptWebsite"]);
+	cookieNames.unshift(cacheDescriptor.acceptWebsite);
 	//if(cookieNames.length()==0)
 	return [
 		...cookieNames,
@@ -87,7 +87,7 @@ function checkTermsAndPolicyAgreed(...cookieNames) {
 		//cacheDescriptor["docs"]["policy"]["hashCookie"]
 	]
 		.map((x) => typeof Cookie.get(x))
-		.every((x) => x != "undefined");
+		.every((x) => x !== "undefined");
 	// &&
 	// [
 	//     "terms_content",
@@ -119,7 +119,7 @@ async function getTextVersionHash(content) {
 }
 
 function approvalAction() {
-	Cookie.set(cacheDescriptor["acceptWebsite"], Date.now());
+	Cookie.set(cacheDescriptor.acceptWebsite, Date.now());
 	document
 		.querySelector(".loadscreen-terms-cover")
 		.classList.remove("is-active");
@@ -157,8 +157,7 @@ function isTermsAccepted() {
 async function loadDoc() {
 	try {
 		const response = await fetch(
-			"https://raw.githubusercontent.com/SilesiaMakerSpace/.github/refs/heads/main/TERMS_AND_POLICY_NOTICE.md",
-			{},
+			"https://raw.githubusercontent.com/SilesiaMakerSpace/.github/refs/heads/main/locate/PL/TERMS_AND_POLICY_NOTICE.md",
 		);
 		if (!response.ok) {
 			throw new Error(`Response status: ${response.status}`);

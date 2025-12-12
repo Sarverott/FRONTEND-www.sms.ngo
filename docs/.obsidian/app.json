@@ -1,0 +1,8 @@
+{
+	"showUnsupportedFiles": true,
+	"uriCallbacks": true,
+	"newLinkFormat": "relative",
+	"alwaysUpdateLinks": true,
+	"newFileLocation": "current",
+	"attachmentFolderPath": "./"
+}
