@@ -1,32 +1,51 @@
-<script setup></script>
+<script setup>
+const menuLister = [
+	{
+		label: "pracownie",
+		list: [
+			{
+				href: "/",
+				title: "qwertyuiop",
+			},
+			{
+				href: "/",
+				title: "qwertyuiop",
+			},
+			{
+				href: "/",
+				title: "qwertyuiop",
+			},
+		],
+	},
+	{
+		label: "pracownie2",
+		list: [
+			{
+				href: "/fff",
+				title: "qwertyuiop",
+			},
+		],
+	},
+];
+</script>
 <template>
   <div class="menu">
-    <p class="menu-label">General</p>
-    <ul class="menu-list">
-      <li><a>Dashboard</a></li>
-      <li><a>Customers</a></li>
-    </ul>
-    <p class="menu-label">Administration</p>
-    <ul class="menu-list">
-      <li><a>Team Settings</a></li>
-      <li>
-        <a class="is-active">Manage Your Team</a>
-        <ul>
-          <li><a>Members</a></li>
-          <li><a>Plugins</a></li>
-          <li><a>Add a member</a></li>
-        </ul>
-      </li>
-      <li><a>Invitations</a></li>
-      <li><a>Cloud Storage Environment Settings</a></li>
-      <li><a>Authentication</a></li>
-    </ul>
-    <p class="menu-label">Transactions</p>
-    <ul class="menu-list">
-      <li><a>Payments</a></li>
-      <li><a>Transfers</a></li>
-      <li><a>Balance</a></li>
-    </ul>
+    <div v-for="section in menuLister">
+      <p class="menu-label navbar-burger-modal">
+        {{ section.label }}
+      </p>
+      <ul class="menu-list">
+        <li v-for="element in section.list">
+          <a :href="element.href">
+            {{ element.title }}
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
-<style lang="css" module></style>
+<style lang="css" scoped>
+.menu-label.navbar-burger-modal {
+  text-align: right;
+}
+</style>

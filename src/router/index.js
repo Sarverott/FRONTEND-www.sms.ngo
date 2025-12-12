@@ -6,24 +6,27 @@ import HelloWorld from "@/views/subdisplays/HelloWorld.vue";
 import SocmedTest from "@/views/subdisplays/SocmedTest.vue";
 // import LogoTest from '@/views/subdisplays/LogoTest.vue'
 
+//HOME / NASZA WIZJA / PRACOWNIE / OFERTA / KALENDARZ / REGULAMIN / KONTAKT
+
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
 	routes: [
 		{
 			path: "/",
-			name: "home",
+			name: "HOME",
 			component: HelloWorld,
 		},
 		{
-			path: "/contact",
-			name: "contact",
+			path: "/vision",
+			name: "NASZA WIZJA",
 			component: SocmedTest,
 		},
 		{
-			path: "/calendar",
-			name: "calendar",
+			path: "/workstations",
+			name: "PRACOWNIE",
 			component: Callendarium,
 		},
+		{},
 		// {
 		//   path: '/about',
 		//   name: 'about',

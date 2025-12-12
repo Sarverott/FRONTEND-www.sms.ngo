@@ -6,7 +6,8 @@
     "build": "vite build",
     "test:unit": "vitest",
     "dev": "vite",
-    "format": "biome check --write src/",
+    "quickfix": "biome check --fix --unsafe src/",
+    "format": "biome check --write --u src/",
     "preview": "vite preview",
     "prepare": "husky"
   },
@@ -25,6 +26,7 @@
     "p5": "^2.0.5",
     "qr": "^0.4.2",
     "register-service-worker": "^1.7.2",
+    "sms.ngo": "github:SilesiaMakerSpace/.github",
     "socket.io-client": "^4.8.1",
     "TagCloud": "^2.5.0",
     "three": "^0.176.0",
