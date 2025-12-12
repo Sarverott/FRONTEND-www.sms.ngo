@@ -1,0 +1,12 @@
+{
+  "name": "sms-tools",
+  "version": "1.0.0",
+  "description": "set of tools",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "proofstamper.js",
+  "scripts": {
+    "test": "task"
+  }
+}
