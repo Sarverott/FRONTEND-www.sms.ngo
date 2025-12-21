@@ -25,6 +25,8 @@ dependencies = [
     "marimo>=0.18.4",
     "marko>=2.2.1",
     "matplotlib>=3.10.8",
+    "miniwdl>=1.13.1",
+    "miniwdl-viz",
     "mysql-connector-python>=9.5.0",
     "notebook>=7.5.0",
     "numpy>=1.26.4",
@@ -50,3 +52,6 @@ dependencies = [
     "whisperspeech==0.8.9",
     "xai>=0.3.0",
 ]
+
+[tool.uv.sources]
+miniwdl-viz = { git = "https://github.com/chanzuckerberg/miniwdl-viz.git" }

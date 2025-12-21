@@ -3,6 +3,6 @@
 git fetch
 git pull
 npm run quickfix
-#npm audit fix --force
-#npm exec -c "snyk test"
+npm audit --omit=optional fix --force
+npm exec -c "snyk test"
 git add .

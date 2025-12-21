@@ -1,0 +1,41 @@
+socmed:
+  - type: instagram
+    link:
+    icon: https://www.instagram.com/favicon.ico
+    classes:
+      - is-danger
+      - is-inverted
+
+  - type: youtube
+    link:
+    icon: https://youtube.com/favicon.ico
+    classes:
+      - is-danger
+
+  - type: facebook
+    link:
+    icon: https://facebook.com/favicon.ico
+    classes:
+      - is-link
+
+  - type: tiktok
+    link:
+    icon: https://tiktok.com/favicon.ico
+    classes:
+      - is-danger
+      - is-inverted
+
+  - type: tweeter
+    link:
+    icon: https://x.com/favicon.ico
+    classes:
+      - is-black
+
+  - type: github
+    link:
+    icon: https://github.com/favicon.ico
+    classes:
+      - is-white
+
+frontpage:
+  database:
