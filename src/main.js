@@ -1,5 +1,8 @@
 import "./assets/main.css";
 
+import "bulma";
+import "@glidejs/glide";
+
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";

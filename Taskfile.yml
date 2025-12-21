@@ -2,17 +2,16 @@
 
 version: '3'
 
-
 tasks:
   autogit:
     cmds:
       - task: skip_repo_stuff
-  devrun:
+  run:
     cmds:
       - npm install
       - npm run dev
     silent: true
   default:
     cmds:
-      - code .
+      - codium .
     silent: true
