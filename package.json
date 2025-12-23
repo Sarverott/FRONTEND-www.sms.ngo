@@ -22,7 +22,7 @@
     "isomorphic-git": "^1.30.2",
     "js-cookie": "^3.0.5",
     "jsOTP": "github:Sarverott/JS-OTP",
-    "marked": "^16.3.0",
+    "marked": "^16.4.2",
     "mongodb": "7.0",
     "opentimestamps": "^0.0.0",
     "p5": "^2.0.5",
@@ -37,7 +37,8 @@
     "vue": "^3.5.13",
     "vue-i18n": "^11.1.12",
     "vue-meta": "^2.4.0",
-    "vue-router": "^4.5.0"
+    "vue-router": "^4.5.0",
+    "yaml": "^2.8.2"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",

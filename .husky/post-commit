@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#git push develop
+#npm run quickfix
+#npm audit --omit=optional fix --force
+#npm exec -c "snyk test"
+#git add .

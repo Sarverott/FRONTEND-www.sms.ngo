@@ -1,13 +1,13 @@
 <script setup>
 //import { props } from "vue"
 const props = defineProps({
-	sitename: String,
-	currentcontext: String,
-});
+  sitename: String,
+  currentcontext: String,
+})
 
-import ThemeButton from "@/components/ThemeButton.vue";
-import NavbarHead from "@/components/head-navbar/NavbarHead.vue";
-import SocMedIcon from "@/components/soc-med/SocMedIcon.vue";
+import ThemeButton from '@/components/ThemeButton.vue'
+import NavbarHead from '@/components/head-navbar/NavbarHead.vue'
+//import SocMedIcons from '@/components/socmeds/ListBoxes.vue'
 </script>
 
 <template>
@@ -27,6 +27,7 @@ import SocMedIcon from "@/components/soc-med/SocMedIcon.vue";
           <a class="navbar-item"> Home </a>
           <a class="navbar-item"> Documentation </a>
         </nav>
+        <!--<SocMedIcons></SocMedIcons>-->
       </div>
     </div>
   </header>

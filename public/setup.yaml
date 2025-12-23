@@ -1,9 +1,9 @@
 socmed:
   - type: instagram
-    link:
+    link: https://www.instagram.com/slaski_maker_space
     icon: https://www.instagram.com/favicon.ico
     classes:
-      - is-danger
+      - is-info
       - is-inverted
 
   - type: youtube
@@ -13,7 +13,7 @@ socmed:
       - is-danger
 
   - type: facebook
-    link:
+    link: https://www.facebook.com/profile.php?id=61569883589310
     icon: https://facebook.com/favicon.ico
     classes:
       - is-link

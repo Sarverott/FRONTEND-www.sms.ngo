@@ -1,11 +1,11 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterLink, RouterView } from 'vue-router'
 //import HelloWorld from './components/HelloWorld.vue'
 
-import SilesiaAside from "./Aside_LeftPanel.vue";
-import SilesiaFooter from "./Footer_BottomLinks.vue";
-import SilesiaHeader from "./Header_TopHat.vue";
-import SilesiaMainCenter from "./Main_Centerior.vue";
+import SilesiaAside from './aside-left.vue'
+import SilesiaFooter from './footer.vue'
+import SilesiaHeader from './header.vue'
+import SilesiaMainCenter from './mainarea.vue'
 
 //import { totp, hotp } from 'jsOTP'
 
@@ -27,13 +27,16 @@ import SilesiaMainCenter from "./Main_Centerior.vue";
     -->
     <SilesiaHeader sitename="Silesia Maker Space" currentcontext="Hello World! To my tukej som">
       <RouterLink to="/">
-        <button class="is-large button is-warning">Hello World!</button>
+        <button class="is-large button is-warning">Home</button>
       </RouterLink>
       <RouterLink to="/about_this_place">
-        <button class="is-large button is-warning is-dark">About</button>
+        <button class="is-large button is-warning is-dark">Kontakt</button>
       </RouterLink>
       <RouterLink to="/calendar">
         <button class="is-large button is-warning is-dark">terminariumm</button>
+      </RouterLink>
+      <RouterLink to="/about_this_place">
+        <button class="is-large button is-warning is-dark">Kontakt</button>
       </RouterLink>
     </SilesiaHeader>
 
