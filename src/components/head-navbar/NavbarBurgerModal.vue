@@ -1,32 +1,53 @@
 <script setup>
 const menuLister = [
-	{
-		label: "pracownie",
-		list: [
-			{
-				href: "/",
-				title: "qwertyuiop",
-			},
-			{
-				href: "/",
-				title: "qwertyuiop",
-			},
-			{
-				href: "/",
-				title: "qwertyuiop",
-			},
-		],
-	},
-	{
-		label: "pracownie2",
-		list: [
-			{
-				href: "/fff",
-				title: "qwertyuiop",
-			},
-		],
-	},
-];
+  {
+    label: 'Ogólne Informacje',
+    list: [
+      {
+        href: '/',
+        title: 'Start',
+      },
+      {
+        href: '/about',
+        title: 'O MakerSpace',
+      },
+      {
+        href: '/contact',
+        title: 'kontakt',
+      },
+    ],
+  },
+  {
+    label: 'pracownie',
+    list: [
+      {
+        href: '/',
+        title: 'warsztat elektroniczny',
+      },
+      {
+        href: '/',
+        title: 'wielka stolarnia',
+      },
+      {
+        href: '/',
+        title: 'kuźnia nożowników',
+      },
+      {
+        href: '/',
+        title: 'więcej o pracowniach',
+      },
+    ],
+  },
+  {
+    label: 'pracownie2',
+    list: [
+      {
+        href: '/fff',
+        title: 'qwertyuiop',
+      },
+    ],
+  },
+]
 </script>
 <template>
   <div class="menu">

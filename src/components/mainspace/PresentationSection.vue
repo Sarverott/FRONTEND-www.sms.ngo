@@ -1,10 +1,11 @@
 <script setup>
 // Add your component logic here
 
-import InitialSlider from './InitialSlider.vue'
+//import InitialSlider from './StartSliderSection.vue'
 </script>
 
 <template>
+  <section></section>
   <section class="hero is-primary is-medium">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">

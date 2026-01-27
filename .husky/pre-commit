@@ -1,8 +1,8 @@
 #!/bin/sh
 
 git fetch
-git pull
+#git pull
 #npm run quickfix
 npm audit --omit=optional fix --force
 #npm exec -c "snyk test"
-#git add .
+git add package.json package-lock.json

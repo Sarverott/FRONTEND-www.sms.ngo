@@ -1,5 +1,6 @@
 <script setup>
 //import { props } from "vue"
+import { RouterLink } from 'vue-router'
 const props = defineProps({
   sitename: String,
   currentcontext: String,
@@ -13,6 +14,7 @@ import NavbarHead from '@/components/head-navbar/NavbarHead.vue'
 <template>
   <header>
     <NavbarHead>
+      ffff
       <slot></slot>
     </NavbarHead>
     <div class="hero is-warning is-large">
@@ -24,8 +26,10 @@ import NavbarHead from '@/components/head-navbar/NavbarHead.vue'
           {{ currentcontext }}
         </h1>
         <nav class="buttons has-addons">
-          <a class="navbar-item"> Home </a>
-          <a class="navbar-item"> Documentation </a>
+          <RouterLink class="navbar-item" to="/"> Start </RouterLink>
+          <RouterLink class="navbar-item" to="/contact"> Kontakt </RouterLink>
+          <RouterLink class="navbar-item" to="/"> Start </RouterLink>
+          <RouterLink class="navbar-item" to="/contact"> Kontakt </RouterLink>
         </nav>
         <!--<SocMedIcons></SocMedIcons>-->
       </div>
